@@ -1,2 +1,2 @@
-# spsa2102.github.io
-Projeto ICG
+# Projeto_ICG
+Projeto de Introdução à Computação Grafica
