@@ -5,14 +5,14 @@ export function create_maze() {
     var maze_walls = [];
 
     var floorGeometry = new THREE.PlaneGeometry(54, 54);
-    var floorMaterial = new THREE.MeshBasicMaterial({ color: 0x30211F, side: THREE.DoubleSide });
+    var floorMaterial = new THREE.MeshLambertMaterial({ color: 0x30211F, side: THREE.DoubleSide });
     var floor = new THREE.Mesh(floorGeometry, floorMaterial);
     floor.position.set(0,0,0);
     floor.rotation.x = Math.PI / 2;
     maze.add(floor);
 
     var wallGeometry = new THREE.BoxGeometry(0.1, 2.5, 54);
-    var wallMaterial = new THREE.MeshBasicMaterial({ color: 0x2C4457 });
+    var wallMaterial = new THREE.MeshLambertMaterial({ color: 0x2C4457 });
     var wall1 = new THREE.Mesh(wallGeometry, wallMaterial);
     wall1.position.set(27, 1.25, 0);
     maze.add(wall1);
@@ -40,7 +40,7 @@ export function create_maze() {
     maze_walls.push(wallBox4);
 
     var rectagularWallGeometry = new THREE.BoxGeometry(0.1, 2.5, 6);
-    var rectagularWallMaterial = new THREE.MeshBasicMaterial({ color: 0x2C4457 });
+    var rectagularWallMaterial = new THREE.MeshLambertMaterial({ color: 0x2C4457 });
     var rectagularWall1 = new THREE.Mesh(rectagularWallGeometry, rectagularWallMaterial);
     rectagularWall1.position.set(21, 1.25, 24);
     maze.add(rectagularWall1);
