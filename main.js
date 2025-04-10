@@ -110,7 +110,7 @@ chest4.position.set(-8.5, 0, -12);
 chest4.rotation.y = - Math.PI / 2;
 scene.add(chest4);
 
-const ambient = new THREE.AmbientLight(0xffffff, 0.08);
+const ambient = new THREE.AmbientLight(0xffffff, 0.15);
 scene.add(ambient);
 
 // Player controls
